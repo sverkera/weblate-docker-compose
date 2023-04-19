@@ -1,5 +1,16 @@
 version: '3'
 services:
   weblate:
+    container_name: weblate
     ports:
       - 8880:8080
+    env_file:
+    - ./stack.env
+
+  database:
+    container_name: database
+    env_file:
+    - ./stack.env
+
+  cache:
+    container_name: cache
