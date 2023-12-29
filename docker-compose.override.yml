@@ -1,6 +1,7 @@
 version: '3'
 services:
   weblate:
+    image: weblate/weblate:5.0.2
     container_name: weblate
     ports:
       - 8880:8080
